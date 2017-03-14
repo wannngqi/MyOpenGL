@@ -135,9 +135,9 @@ const GLchar* fragmentShaderSource = "#version 410 core\n"
     glBindVertexArray(VAO);
 
     glDrawArrays(GL_TRIANGLES, 0, 3);
-    glBindVertexArray(0);
-
+    //glBindVertexArray(0);
     
+    [self.openGLContext flushBuffer];
 
     
 }
