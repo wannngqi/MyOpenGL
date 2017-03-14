@@ -52,10 +52,6 @@ const GLchar* fragmentShaderSource = "#version 410 core\n"
     
     // Drawing code here.
 
-    const GLubyte* openGLVersion = glGetString(GL_VERSION);
-
-    NSLog(@"glversion [%s]",openGLVersion);
-
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
 
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
